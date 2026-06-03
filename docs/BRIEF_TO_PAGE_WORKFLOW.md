@@ -29,8 +29,11 @@ Copy [`templates/design-brief-template.md`](../templates/design-brief-template.m
 into a **private, git-ignored** location (e.g.
 `internal/briefs/<track>-<concept>.md`) and fill it in. The brief plans the page:
 learning goals, mental anchor, required diagrams, data shapes, code trace, key
-factual claims, sources to consult, and acceptance criteria. Filled briefs are
-**not** published.
+factual claims, sources to consult, and acceptance criteria. For pages that
+explain LLM internals, it also scaffolds the deep mechanics — learning-sequence
+placement, a concrete running example, a shape ledger, a computation trace, data
+movement/layout notes, and abstraction boundaries. Filled briefs are **not**
+published.
 
 ### Stage 3 — Review the brief
 Before any HTML, check the brief for:
@@ -92,8 +95,10 @@ workflow leans on:
 
 | Status | Use when |
 |--------|----------|
-| **Draft** | Being written; content incomplete or claims unverified. |
-| **Needs Review** | Drafted, but factual claims / sources not yet checked. |
+| **Draft (placeholder)** | A page shell exists but holds no substantive content yet — just the intended structure. |
+| **Draft** | Real content is being written; it may be incomplete or its claims unverified. |
+| **Needs Review** | Substantively drafted, but factual claims / sources not yet checked. |
 | **Verified** | Claims checked against the cited sources. |
 
-Move a page to **Verified** only after Stage 5 confirms its provenance.
+Move a page off **Draft (placeholder)** once it carries real content, and to
+**Verified** only after Stage 5 confirms its provenance.

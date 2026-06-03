@@ -7,8 +7,11 @@ or revised** (it is the last stage of the
 [brief → page workflow](BRIEF_TO_PAGE_WORKFLOW.md)).
 
 > As of the initial scaffold, nearly everything is **Coming Soon**. The three
-> LLM placeholder pages are **Draft** only in the sense that the page shell
-> exists — they contain no real technical content yet.
+> LLM pages are **Draft (placeholder)**: the page shell and intended structure
+> exist, but they contain no substantive educational content yet. In the status
+> vocabulary, **Draft (placeholder)** is a substatus of **Draft** and becomes
+> plain **Draft** once real content lands. See the status ladder in
+> [PAGE_STANDARDS.md](PAGE_STANDARDS.md).
 
 ## Large Language Models — *current focus*
 

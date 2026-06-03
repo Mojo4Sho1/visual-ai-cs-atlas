@@ -5,7 +5,7 @@
    STATUS: scaffolding only. This file deliberately ships small, dependency-free
    placeholder utilities that future concept pages will build on. Do NOT add
    heavy animation engines or external libraries here without explicit approval
-   (see internal/claude/AGENT_GUIDE.md).
+   (see docs/AGENT_WORKFLOW.md).
 
    The intended model: a "diagram" is a container with ordered "stages". A
    stepper advances/rewinds the visible stage. Real diagrams will populate the

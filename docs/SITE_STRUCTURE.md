@@ -27,7 +27,9 @@ visual-ai-cs-atlas/
 │   ├── gpu-systems/index.html
 │   └── cs-foundations/index.html
 ├── templates/
-│   └── concept-page-template.html   # Standard concept page structure to copy
+│   ├── concept-page-template.html  # Standard concept page structure to copy
+│   ├── design-brief-template.md    # Blank design brief to plan a page
+│   └── page-build-checklist.md     # Post-build verification checklist
 ├── assets/
 │   ├── icons/              # SVG icons
 │   └── diagrams/           # Diagram source/exports
@@ -50,11 +52,13 @@ visual-ai-cs-atlas/
   start a new page, `design-brief-template.md` (blank design brief), and
   `page-build-checklist.md`. Keep section order stable; keep these blank.
 - **`assets/`** — static images/icons/diagrams.
-- **`docs/`** — public-facing standards, references, and workflow docs
-  (`AGENT_WORKFLOW.md`, `BRIEF_TO_PAGE_WORKFLOW.md`).
-- **`internal/`** — private Claude guidance, **filled** design briefs
-  (`internal/briefs/`), and planning. Git ignores this directory; nothing here is
-  published. Public blank templates live in `templates/`; private filled briefs
+- **`docs/`** — public-facing standards, references, and workflow docs. Durable
+  project conventions, contributor instructions, assistant instructions,
+  templates, and standards belong in public tracked files.
+- **`internal/`** — private, git-ignored working space for **filled** design
+  briefs (`internal/briefs/`), scratch plans, and temporary session notes.
+  Nothing essential for understanding or contributing to the repo should live
+  only here. Public blank templates live in `templates/`; private filled briefs
   live here.
 
 ## Relative path conventions

@@ -36,10 +36,15 @@ should be able to tell which source backs each.
 
 ## Status interaction
 
-- A page can only reach **Verified** / **Available**
-  (see [PAGE_STANDARDS.md](PAGE_STANDARDS.md)) once its factual claims have been
-  checked against the cited sources.
-- A drafted page with unchecked claims should be **Needs Review**.
+Statuses are defined in [PAGE_STANDARDS.md](PAGE_STANDARDS.md). Provenance
+gates the upper rungs of that ladder:
+
+- A **Draft (placeholder)** page carries no factual claims yet, so there is
+  nothing to source — it is just a shell.
+- A substantively drafted page whose claims have **not** been checked against
+  their sources should be **Needs Review**, not **Verified**.
+- A page can only reach **Verified** / **Available** once its factual claims
+  have been checked against the cited sources.
 
 ## Not in scope
 

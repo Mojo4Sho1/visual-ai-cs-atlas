@@ -86,9 +86,11 @@ Public standards live in [`docs/`](docs/):
 
 ## Private / internal
 
-The `internal/` directory holds private Claude instructions, design briefs, and
-local planning. **It is intentionally git-ignored and never published.** Don't
-rely on it for anything that should ship publicly.
+The `internal/` directory is private, git-ignored working space for filled
+design briefs, scratch plans, and temporary session notes. It is never
+published, and nothing essential for understanding or contributing to the repo
+should live only there; durable conventions and contributor / assistant guidance
+belong in public tracked docs.
 
 ## Future direction
 

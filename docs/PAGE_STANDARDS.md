@@ -39,19 +39,29 @@ Keep the order stable. Omit a section only when it genuinely does not apply
 
 ## Page statuses
 
-Use these status labels (rendered as pills via the `.pill--*` classes):
+Use these status labels (rendered as pills via the `.pill--*` classes). The key
+distinction early on is between a **shell that exists but has no real content**
+and a **page with real educational content that is still being written**.
+**Draft (placeholder)** is an explicit substatus of **Draft** for page shells;
+it is not interchangeable with a substantive draft.
 
-| Status         | Pill class         | Meaning |
-|----------------|--------------------|---------|
-| **Coming Soon**| `pill--soon`       | Planned, no real content yet — placeholder only. |
-| **Draft**      | `pill--draft`      | Being written; content incomplete or unverified. |
-| **Needs Review**| `pill--review`    | Drafted but factual claims/sources not yet checked. |
-| **Verified**   | `pill--verified`   | Claims checked against cited sources. |
-| **Available**  | `pill--available`  | Complete and ready to learn from. |
+| Status               | Pill class        | Meaning |
+|----------------------|-------------------|---------|
+| **Coming Soon**      | `pill--soon`      | Planned concept with no substantive page yet — a navigational placeholder only (often "_not created yet_"). |
+| **Draft (placeholder)** | `pill--draft`  | A page file/shell exists, but it does not yet contain substantive educational content — just the intended structure. |
+| **Draft**            | `pill--draft`     | Real educational content exists, but it may still be incomplete or unverified. |
+| **Needs Review**     | `pill--review`    | Substantively drafted, but factual claims, sources, provenance, or implementation details still need review. |
+| **Verified**         | `pill--verified`  | Claims and sources have been checked against the cited references. |
+| **Available**        | `pill--available` | Polished enough for normal learner use. |
 
-A page generally moves: Coming Soon → Draft → Needs Review → Verified →
-Available. "Available" is the public-ready bar; "Verified" specifically asserts
-that provenance has been checked.
+A page generally moves: Coming Soon → Draft (placeholder) → Draft →
+Needs Review → Verified → Available. "Available" is the public-ready bar;
+"Verified" specifically asserts that provenance has been checked.
+
+There is no separate pill for **Draft (placeholder)** — it reuses `pill--draft`,
+and the page body must say plainly that it is a placeholder (see *Authoring
+rules*). Track the substatus in
+[`CONTENT_STATUS.md`](CONTENT_STATUS.md).
 
 ## Authoring rules
 

@@ -1,9 +1,9 @@
 # Agent Workflow
 
-A public, sanitized guide for future assistant instances (Claude, ChatGPT, or
-others) working in this repo. Read this before making any change. It is the
-public-safe counterpart to private planning — nothing essential lives only in
-the git-ignored `internal/` directory.
+A public, sanitized guide for future assistants and human contributors working
+in this repo. Read this before making any change. Public, tracked docs are the
+single source of truth for durable repo conventions; nothing essential lives
+only in the git-ignored `internal/` directory.
 
 ## Read first
 
@@ -43,9 +43,14 @@ the git-ignored `internal/` directory.
 ## Public vs private
 
 - **Public, tracked:** everything under `docs/`, `templates/`, `pages/`,
-  `styles/`, `scripts/`, `assets/`, and the root files.
+  `styles/`, `scripts/`, `assets/`, and the root files. Durable project
+  conventions, contributor instructions, assistant instructions, templates, and
+  standards belong here.
 - **Private, git-ignored:** everything under `internal/` (filled design briefs,
-  session logs, private assistant guidance, scratch plans).
+  scratch plans, and temporary session notes).
+- **No hidden required instructions.** `internal/` may hold working artifacts,
+  but it must not be the only place where required repo conventions or workflow
+  instructions are documented.
 - **Never copy private content into public files.** You may adapt the *structure*
   of a private template into a public blank one, but public files must contain no
   filled brief content, personal session notes, or references to private
