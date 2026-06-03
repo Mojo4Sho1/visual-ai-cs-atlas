@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Visual AI &amp; CS Atlas</title>
+    <meta
+      name="description"
+      content="A personal browser-based knowledge base for learning AI and computer science through diagrams, code traces, and recall-friendly summaries."
+    />
+    <link rel="stylesheet" href="styles/base.css" />
+    <link rel="stylesheet" href="styles/layout.css" />
+    <link rel="stylesheet" href="styles/components.css" />
+  </head>
+  <body>
+    <div class="page">
+      <!-- Top navigation -->
+      <header class="topnav">
+        <div class="container topnav__inner">
+          <a class="topnav__brand" href="index.html">Visual AI &amp; CS Atlas</a>
+          <nav class="topnav__links">
+            <a href="pages/llms/index.html">LLMs</a>
+            <a href="pages/gnns/index.html">GNNs</a>
+            <a href="pages/gpu-systems/index.html">GPU Systems</a>
+            <a href="pages/cs-foundations/index.html">CS Foundations</a>
+          </nav>
+        </div>
+      </header>
+
+      <main class="main">
+        <div class="container">
+          <!-- Hero -->
+          <section class="page-header">
+            <h1>Visual AI &amp; CS Atlas</h1>
+            <p class="subtitle">
+              A personal browser-based knowledge base for learning AI and
+              computer science through diagrams, code traces, visual
+              explanations, and recall-friendly summaries.
+            </p>
+          </section>
+
+          <!-- Track cards -->
+          <section class="section">
+            <div class="section__title">
+              <h2>Tracks</h2>
+            </div>
+            <div class="grid grid--auto">
+              <a class="card" href="pages/llms/index.html">
+                <div class="card__head">
+                  <span class="card__title">Large Language Models</span>
+                  <span class="pill pill--draft">Draft</span>
+                </div>
+                <p class="card__desc">
+                  How transformers represent, attend to, and generate sequences
+                  of tokens.
+                </p>
+                <div class="card__topics">
+                  <strong>Topics:</strong> transformer overview · Q/K/V ·
+                  attention · RoPE · KV cache · decoding
+                </div>
+                <span class="card__link">Open track →</span>
+              </a>
+
+              <a class="card" href="pages/gnns/index.html">
+                <div class="card__head">
+                  <span class="card__title">Graph Neural Networks</span>
+                  <span class="pill pill--soon">Coming Soon</span>
+                </div>
+                <p class="card__desc">
+                  Learning over graph-structured data via message passing and
+                  neighborhood aggregation.
+                </p>
+                <div class="card__topics">
+                  <strong>Topics:</strong> message passing · aggregation ·
+                  GCN/GAT · readout
+                </div>
+                <span class="card__link">Open track →</span>
+              </a>
+
+              <a class="card" href="pages/gpu-systems/index.html">
+                <div class="card__head">
+                  <span class="card__title">GPU Systems for AI</span>
+                  <span class="pill pill--soon">Coming Soon</span>
+                </div>
+                <p class="card__desc">
+                  How AI workloads map onto GPU hardware, memory hierarchies, and
+                  execution models.
+                </p>
+                <div class="card__topics">
+                  <strong>Topics:</strong> CUDA vs Tensor Cores · memory
+                  hierarchy · batching · kernels
+                </div>
+                <span class="card__link">Open track →</span>
+              </a>
+
+              <a class="card" href="pages/cs-foundations/index.html">
+                <div class="card__head">
+                  <span class="card__title">CS Foundations</span>
+                  <span class="pill pill--soon">Coming Soon</span>
+                </div>
+                <p class="card__desc">
+                  Core computer science ideas that recur throughout AI systems
+                  work.
+                </p>
+                <div class="card__topics">
+                  <strong>Topics:</strong> complexity analysis · data structures
+                  · memory models
+                </div>
+                <span class="card__link">Open track →</span>
+              </a>
+            </div>
+          </section>
+
+          <!-- Current focus -->
+          <section class="section">
+            <div class="section__title">
+              <h2>Current Focus</h2>
+              <span class="pill pill--draft">Draft</span>
+            </div>
+            <div class="callout">
+              <p>
+                <strong>Large Language Models.</strong> The atlas is being built
+                track-by-track and page-by-page. LLM pages are the first content
+                focus — starting with a transformer overview, then the
+                attention machinery (Q/K/V projections, scaled dot-product
+                attention, multi-head attention), and onward to positional
+                encodings, the KV cache, and decoding.
+              </p>
+              <p style="margin-bottom: 0">
+                <a href="pages/llms/index.html">Go to the LLM track →</a>
+              </p>
+            </div>
+          </section>
+
+          <!-- Coming soon -->
+          <section class="section">
+            <div class="section__title">
+              <h2>Coming Soon</h2>
+            </div>
+            <div class="grid grid--2">
+              <div class="card">
+                <div class="card__head">
+                  <span class="card__title">LLM internals</span>
+                  <span class="pill pill--soon">Coming Soon</span>
+                </div>
+                <ul class="planned">
+                  <li>Q/K/V projections</li>
+                  <li>Attention variants</li>
+                  <li>KV cache</li>
+                  <li>Positional encodings / RoPE</li>
+                </ul>
+              </div>
+              <div class="card">
+                <div class="card__head">
+                  <span class="card__title">Systems &amp; foundations</span>
+                  <span class="pill pill--soon">Coming Soon</span>
+                </div>
+                <ul class="planned">
+                  <li>Message passing (GNNs)</li>
+                  <li>CUDA Cores vs Tensor Cores</li>
+                  <li>Batching / padding / packing</li>
+                  <li>Complexity analysis</li>
+                </ul>
+              </div>
+            </div>
+          </section>
+        </div>
+      </main>
+
+      <footer class="footer">
+        <div class="container footer__inner">
+          <span>Visual AI &amp; CS Atlas — personal learning atlas</span>
+          <span>&copy; <span data-current-year>2026</span></span>
+        </div>
+      </footer>
+    </div>
+
+    <script src="scripts/main.js"></script>
+    <script src="scripts/visual-components.js"></script>
+  </body>
+</html>

@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Large Language Models — Visual AI &amp; CS Atlas</title>
+    <meta
+      name="description"
+      content="LLM track: transformer overview, attention machinery, positional encodings, KV cache, and decoding."
+    />
+    <link rel="stylesheet" href="../../styles/base.css" />
+    <link rel="stylesheet" href="../../styles/layout.css" />
+    <link rel="stylesheet" href="../../styles/components.css" />
+  </head>
+  <body>
+    <div class="page">
+      <header class="topnav">
+        <div class="container topnav__inner">
+          <a class="topnav__brand" href="../../index.html"
+            >Visual AI &amp; CS Atlas</a
+          >
+          <nav class="topnav__links">
+            <a href="index.html">LLMs</a>
+            <a href="../gnns/index.html">GNNs</a>
+            <a href="../gpu-systems/index.html">GPU Systems</a>
+            <a href="../cs-foundations/index.html">CS Foundations</a>
+          </nav>
+        </div>
+      </header>
+
+      <main class="main">
+        <div class="container">
+          <div class="breadcrumb">
+            <a href="../../index.html">Home</a> / Large Language Models
+          </div>
+
+          <section class="page-header">
+            <h1>Large Language Models</h1>
+            <p class="subtitle">
+              How transformers represent, attend to, and generate sequences of
+              tokens. This track is the atlas's current focus — pages are added
+              one at a time, working from the high-level transformer picture down
+              into the attention machinery and generation loop.
+            </p>
+          </section>
+
+          <section class="section">
+            <div class="section__title">
+              <h2>Pages</h2>
+            </div>
+            <div class="grid grid--auto">
+              <a class="card" href="transformer-overview.html">
+                <div class="card__head">
+                  <span class="card__title">Transformer Overview</span>
+                  <span class="pill pill--draft">Draft</span>
+                </div>
+                <p class="card__desc">
+                  The end-to-end shape of a transformer block and how the pieces
+                  connect.
+                </p>
+                <span class="card__link">Open page →</span>
+              </a>
+
+              <div class="card">
+                <div class="card__head">
+                  <span class="card__title">Tokens and Embeddings</span>
+                  <span class="pill pill--soon">Coming Soon</span>
+                </div>
+                <p class="card__desc">
+                  From raw text to token IDs to embedding vectors.
+                </p>
+              </div>
+
+              <a class="card" href="qkv-attention.html">
+                <div class="card__head">
+                  <span class="card__title"
+                    >Q/K/V Projections and Attention Flow</span
+                  >
+                  <span class="pill pill--draft">Draft</span>
+                </div>
+                <p class="card__desc">
+                  How queries, keys, and values are produced and routed through
+                  attention.
+                </p>
+                <span class="card__link">Open page →</span>
+              </a>
+
+              <div class="card">
+                <div class="card__head">
+                  <span class="card__title">Scaled Dot-Product Attention</span>
+                  <span class="pill pill--soon">Coming Soon</span>
+                </div>
+                <p class="card__desc">
+                  The core attention computation and why it is scaled.
+                </p>
+              </div>
+
+              <div class="card">
+                <div class="card__head">
+                  <span class="card__title">Multi-Head Attention</span>
+                  <span class="pill pill--soon">Coming Soon</span>
+                </div>
+                <p class="card__desc">
+                  Running attention in parallel subspaces and recombining them.
+                </p>
+              </div>
+
+              <a class="card" href="attention-variants.html">
+                <div class="card__head">
+                  <span class="card__title">Attention Variants</span>
+                  <span class="pill pill--draft">Draft</span>
+                </div>
+                <p class="card__desc">
+                  Comparing attention designs (e.g., MHA / MQA / GQA and related
+                  ideas).
+                </p>
+                <span class="card__link">Open page →</span>
+              </a>
+
+              <div class="card">
+                <div class="card__head">
+                  <span class="card__title">Positional Encodings / RoPE</span>
+                  <span class="pill pill--soon">Coming Soon</span>
+                </div>
+                <p class="card__desc">
+                  How position information is injected into otherwise
+                  order-agnostic attention.
+                </p>
+              </div>
+
+              <div class="card">
+                <div class="card__head">
+                  <span class="card__title">KV Cache</span>
+                  <span class="pill pill--soon">Coming Soon</span>
+                </div>
+                <p class="card__desc">
+                  Caching keys and values to make autoregressive decoding
+                  efficient.
+                </p>
+              </div>
+
+              <div class="card">
+                <div class="card__head">
+                  <span class="card__title">Decoding and Generation</span>
+                  <span class="pill pill--soon">Coming Soon</span>
+                </div>
+                <p class="card__desc">
+                  The generation loop and sampling strategies that turn logits
+                  into text.
+                </p>
+              </div>
+            </div>
+          </section>
+
+          <p><a href="../../index.html">← Back to home</a></p>
+        </div>
+      </main>
+
+      <footer class="footer">
+        <div class="container footer__inner">
+          <span>Visual AI &amp; CS Atlas — LLM track</span>
+          <span>&copy; <span data-current-year>2026</span></span>
+        </div>
+      </footer>
+    </div>
+
+    <script src="../../scripts/main.js"></script>
+    <script src="../../scripts/visual-components.js"></script>
+  </body>
+</html>

@@ -1,0 +1,136 @@
+/* ==========================================================================
+   layout.css — page shell, navigation skeleton, and grid systems
+   Visual AI & CS Atlas
+   --------------------------------------------------------------------------
+   Structural layout only. Visual treatment of cards / pills / panels lives in
+   components.css. Keeping a stable layout here is intentional: pages should be
+   recognizable by shape, per the project's "consistent page layout" principle.
+   ========================================================================== */
+
+/* --- Page shell --- */
+.page {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.container {
+  width: 100%;
+  max-width: var(--content-max);
+  margin: 0 auto;
+  padding: 0 var(--space-5);
+}
+
+/* --- Top navigation --- */
+.topnav {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  background: rgba(15, 17, 23, 0.85);
+  backdrop-filter: blur(8px);
+  border-bottom: 1px solid var(--border);
+}
+
+.topnav__inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-4);
+  height: 56px;
+}
+
+.topnav__brand {
+  font-weight: 700;
+  color: var(--text);
+  letter-spacing: 0.2px;
+}
+.topnav__brand:hover {
+  text-decoration: none;
+  color: var(--accent);
+}
+
+.topnav__links {
+  display: flex;
+  gap: var(--space-4);
+  flex-wrap: wrap;
+  font-size: 0.92rem;
+}
+
+/* --- Main content region --- */
+.main {
+  flex: 1;
+  padding: var(--space-7) 0;
+}
+
+/* --- Page header block --- */
+.page-header {
+  margin-bottom: var(--space-6);
+}
+.page-header .subtitle {
+  font-size: 1.05rem;
+  max-width: 70ch;
+}
+
+/* --- Breadcrumb --- */
+.breadcrumb {
+  font-size: 0.85rem;
+  color: var(--text-faint);
+  margin-bottom: var(--space-4);
+}
+.breadcrumb a {
+  color: var(--text-muted);
+}
+
+/* --- Sections --- */
+.section {
+  margin: var(--space-7) 0;
+}
+.section__title {
+  display: flex;
+  align-items: baseline;
+  gap: var(--space-3);
+  margin-bottom: var(--space-4);
+}
+
+/* --- Card grids --- */
+.grid {
+  display: grid;
+  gap: var(--space-4);
+}
+.grid--2 {
+  grid-template-columns: repeat(2, 1fr);
+}
+.grid--3 {
+  grid-template-columns: repeat(3, 1fr);
+}
+.grid--auto {
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+}
+
+/* --- Footer --- */
+.footer {
+  border-top: 1px solid var(--border);
+  padding: var(--space-5) 0;
+  color: var(--text-faint);
+  font-size: 0.85rem;
+}
+.footer__inner {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: var(--space-3);
+}
+
+/* --- Responsive --- */
+@media (max-width: 760px) {
+  .grid--2,
+  .grid--3 {
+    grid-template-columns: 1fr;
+  }
+  .topnav__inner {
+    height: auto;
+    padding: var(--space-3) 0;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}

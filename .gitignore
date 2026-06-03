@@ -1,0 +1,23 @@
+# --- OS / editor files ---
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# --- Local Python / JS artifacts (no build step yet, but ignored proactively) ---
+__pycache__/
+.pytest_cache/
+node_modules/
+dist/
+build/
+
+# --- Local server / cache files ---
+.cache/
+.parcel-cache/
+.vite/
+
+# --- Private / internal Claude and planning files ---
+internal/
+*.local.md
+.claude/
+.claude.local/

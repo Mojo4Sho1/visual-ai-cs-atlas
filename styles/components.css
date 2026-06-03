@@ -1,0 +1,309 @@
+/* ==========================================================================
+   components.css — reusable UI components
+   Visual AI & CS Atlas
+   --------------------------------------------------------------------------
+   Each component here is referenced by docs/VISUAL_LANGUAGE.md and
+   docs/PAGE_STANDARDS.md. Keep class names stable so future concept pages can
+   rely on them.
+   ========================================================================== */
+
+/* --- Cards (track + topic) --- */
+.card {
+  display: flex;
+  flex-direction: column;
+  background: var(--bg-card);
+  border: 1px solid var(--card-border);
+  border-radius: var(--radius);
+  padding: var(--space-5);
+  transition: border-color 0.15s ease, transform 0.15s ease;
+}
+.card:hover {
+  border-color: var(--border-strong);
+  transform: translateY(-2px);
+}
+.card__head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-3);
+  margin-bottom: var(--space-2);
+}
+.card__title {
+  font-size: 1.1rem;
+  font-weight: 650;
+  color: var(--text);
+}
+.card__desc {
+  color: var(--text-muted);
+  font-size: 0.95rem;
+  margin-bottom: var(--space-3);
+}
+.card__topics {
+  font-size: 0.82rem;
+  color: var(--text-faint);
+  margin-top: auto;
+}
+.card__topics strong {
+  color: var(--text-muted);
+  font-weight: 600;
+}
+.card__link {
+  margin-top: var(--space-4);
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+/* A whole card can be a link */
+a.card {
+  color: inherit;
+}
+a.card:hover {
+  text-decoration: none;
+}
+
+/* --- Status pills --- */
+.pill {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-1);
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  padding: 0.2em 0.6em;
+  border-radius: 999px;
+  white-space: nowrap;
+}
+.pill--available {
+  color: var(--status-available);
+  background: var(--status-available-bg);
+}
+.pill--draft {
+  color: var(--status-draft);
+  background: var(--status-draft-bg);
+}
+.pill--soon {
+  color: var(--status-soon);
+  background: var(--status-soon-bg);
+}
+.pill--review {
+  color: var(--status-review);
+  background: var(--status-review-bg);
+}
+.pill--verified {
+  color: var(--status-verified);
+  background: var(--status-verified-bg);
+}
+
+/* --- Memory anchor --- */
+.anchor {
+  border-left: 3px solid var(--accent);
+  background: var(--accent-soft);
+  padding: var(--space-3) var(--space-4);
+  border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+  color: var(--text);
+  font-size: 1.05rem;
+}
+
+/* --- Metadata strip --- */
+.meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-4);
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  padding: var(--space-3) 0;
+  border-top: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+}
+.meta dt {
+  color: var(--text-faint);
+  font-size: 0.72rem;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+.meta dd {
+  margin: 0;
+  color: var(--text);
+}
+
+/* --- Recall panel --- */
+.recall {
+  background: var(--bg-elevated);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: var(--space-5);
+}
+.recall__title {
+  color: var(--accent);
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: var(--space-3);
+}
+
+/* --- Visual placeholder box (where future diagrams will live) --- */
+.viz {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  min-height: 220px;
+  border: 1.5px dashed var(--border-strong);
+  border-radius: var(--radius);
+  background: repeating-linear-gradient(
+    45deg,
+    var(--bg-inset),
+    var(--bg-inset) 12px,
+    var(--bg-elevated) 12px,
+    var(--bg-elevated) 24px
+  );
+  color: var(--text-faint);
+  padding: var(--space-6);
+}
+.viz__label {
+  font-weight: 600;
+  color: var(--text-muted);
+  margin-bottom: var(--space-2);
+}
+.viz__hint {
+  font-size: 0.85rem;
+}
+
+/* --- Code-trace panel --- */
+.code-trace {
+  background: var(--bg-inset);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  overflow: hidden;
+}
+.code-trace__bar {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  padding: var(--space-2) var(--space-4);
+  background: var(--bg-elevated);
+  border-bottom: 1px solid var(--border);
+  font-size: 0.78rem;
+  color: var(--text-faint);
+}
+.code-trace pre {
+  margin: 0;
+  padding: var(--space-4);
+  overflow-x: auto;
+  color: var(--text);
+}
+
+/* --- Comparison table --- */
+.table-wrap {
+  overflow-x: auto;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+}
+table.compare {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.92rem;
+}
+table.compare th,
+table.compare td {
+  text-align: left;
+  padding: var(--space-3) var(--space-4);
+  border-bottom: 1px solid var(--border);
+}
+table.compare thead th {
+  background: var(--bg-elevated);
+  color: var(--text);
+  font-size: 0.78rem;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+table.compare tbody tr:last-child td {
+  border-bottom: none;
+}
+table.compare td {
+  color: var(--text-muted);
+}
+
+/* --- Provenance block --- */
+.provenance {
+  border: 1px solid var(--border);
+  border-left: 3px solid var(--accent-2);
+  border-radius: 0 var(--radius) var(--radius) 0;
+  background: var(--bg-elevated);
+  padding: var(--space-4) var(--space-5);
+  font-size: 0.9rem;
+}
+.provenance__title {
+  color: var(--accent-2);
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: var(--space-2);
+}
+.provenance ul {
+  margin: 0;
+  padding-left: var(--space-5);
+}
+
+/* --- Callout (notes / planned content) --- */
+.callout {
+  border: 1px dashed var(--border-strong);
+  border-radius: var(--radius);
+  padding: var(--space-4) var(--space-5);
+  background: var(--bg-elevated);
+  color: var(--text-muted);
+}
+.callout strong {
+  color: var(--text);
+}
+
+/* --- Planned-sections list (used on placeholder pages) --- */
+.planned {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  gap: var(--space-2);
+}
+.planned li {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  padding: var(--space-3) var(--space-4);
+  background: var(--bg-card);
+  border: 1px solid var(--card-border);
+  border-radius: var(--radius-sm);
+  color: var(--text-muted);
+}
+.planned li::before {
+  content: "›";
+  color: var(--accent);
+  font-weight: 700;
+}
+
+/* --- Stepper controls (scaffolding for future diagram stages) --- */
+.stepper {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-2);
+  margin-top: var(--space-4);
+}
+.stepper button {
+  font: inherit;
+  font-size: 0.85rem;
+  color: var(--text);
+  background: var(--bg-card);
+  border: 1px solid var(--border-strong);
+  border-radius: var(--radius-sm);
+  padding: var(--space-2) var(--space-3);
+  cursor: pointer;
+}
+.stepper button:hover {
+  border-color: var(--accent);
+}
+.stepper__status {
+  font-size: 0.85rem;
+  color: var(--text-faint);
+}

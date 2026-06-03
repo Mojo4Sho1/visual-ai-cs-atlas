@@ -1,0 +1,145 @@
+/* ==========================================================================
+   base.css — design tokens, resets, and base element styles
+   Visual AI & CS Atlas
+   --------------------------------------------------------------------------
+   All theme values live here as CSS custom properties so that layout.css and
+   components.css stay declarative. Adjust the palette / spacing scale in one
+   place and the whole site follows.
+   ========================================================================== */
+
+:root {
+  /* --- Backgrounds --- */
+  --bg: #0f1117;
+  --bg-elevated: #171a22;
+  --bg-card: #1b1f2a;
+  --bg-inset: #11141b;
+
+  /* --- Text --- */
+  --text: #e7e9ee;
+  --text-muted: #a0a6b4;
+  --text-faint: #6b7280;
+
+  /* --- Accents --- */
+  --accent: #6ea8fe;
+  --accent-strong: #4f8cff;
+  --accent-soft: rgba(110, 168, 254, 0.14);
+  --accent-2: #b692f6;
+
+  /* --- Borders --- */
+  --border: #2a2f3c;
+  --border-strong: #3a4150;
+  --card-border: #262b38;
+
+  /* --- Status label colors --- */
+  --status-available: #57d9a3;
+  --status-available-bg: rgba(87, 217, 163, 0.14);
+  --status-draft: #f5c451;
+  --status-draft-bg: rgba(245, 196, 81, 0.14);
+  --status-soon: #8a93a6;
+  --status-soon-bg: rgba(138, 147, 166, 0.14);
+  --status-review: #f59e8b;
+  --status-review-bg: rgba(245, 158, 139, 0.14);
+  --status-verified: #6ea8fe;
+  --status-verified-bg: rgba(110, 168, 254, 0.14);
+
+  /* --- Spacing scale --- */
+  --space-1: 0.25rem;
+  --space-2: 0.5rem;
+  --space-3: 0.75rem;
+  --space-4: 1rem;
+  --space-5: 1.5rem;
+  --space-6: 2rem;
+  --space-7: 3rem;
+  --space-8: 4rem;
+
+  /* --- Radius --- */
+  --radius-sm: 6px;
+  --radius: 10px;
+  --radius-lg: 16px;
+
+  /* --- Fonts --- */
+  --font-sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
+    Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+  --font-mono: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas,
+    "Liberation Mono", monospace;
+
+  /* --- Layout --- */
+  --content-max: 1080px;
+  --shadow: 0 1px 2px rgba(0, 0, 0, 0.3), 0 4px 16px rgba(0, 0, 0, 0.25);
+}
+
+/* --- Reset --- */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--font-sans);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  line-height: 1.25;
+  margin: 0 0 var(--space-3);
+  font-weight: 650;
+}
+
+h1 {
+  font-size: 2rem;
+}
+h2 {
+  font-size: 1.4rem;
+}
+h3 {
+  font-size: 1.1rem;
+}
+
+p {
+  margin: 0 0 var(--space-4);
+  color: var(--text-muted);
+}
+
+a {
+  color: var(--accent);
+  text-decoration: none;
+}
+a:hover {
+  color: var(--accent-strong);
+  text-decoration: underline;
+}
+
+code,
+pre {
+  font-family: var(--font-mono);
+  font-size: 0.9em;
+}
+
+ul,
+ol {
+  color: var(--text-muted);
+}
+
+hr {
+  border: none;
+  border-top: 1px solid var(--border);
+  margin: var(--space-6) 0;
+}
+
+small {
+  color: var(--text-faint);
+}

@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<!--
+  ============================================================================
+  CONCEPT PAGE TEMPLATE — Visual AI & CS Atlas
+  ----------------------------------------------------------------------------
+  Copy this file into a track folder (e.g. pages/llms/) and fill it in.
+  Keep the section ORDER stable — pages should be recognizable by shape.
+  Placeholder content below is intentional; replace each <!-- FILL --> region.
+  See docs/PAGE_STANDARDS.md and docs/PROVENANCE_STANDARDS.md.
+
+  NOTE on relative paths: this template assumes the page lives ONE level below
+  pages/ (e.g. pages/llms/foo.html), so asset paths use ../../. Adjust if you
+  place the page elsewhere.
+  ============================================================================
+-->
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Concept Title — Visual AI &amp; CS Atlas</title>
+    <meta name="description" content="One-line description of the concept." />
+    <link rel="stylesheet" href="../../styles/base.css" />
+    <link rel="stylesheet" href="../../styles/layout.css" />
+    <link rel="stylesheet" href="../../styles/components.css" />
+  </head>
+  <body>
+    <div class="page">
+      <header class="topnav">
+        <div class="container topnav__inner">
+          <a class="topnav__brand" href="../../index.html"
+            >Visual AI &amp; CS Atlas</a
+          >
+          <nav class="topnav__links">
+            <a href="../llms/index.html">LLMs</a>
+            <a href="../gnns/index.html">GNNs</a>
+            <a href="../gpu-systems/index.html">GPU Systems</a>
+            <a href="../cs-foundations/index.html">CS Foundations</a>
+          </nav>
+        </div>
+      </header>
+
+      <main class="main">
+        <div class="container">
+          <div class="breadcrumb">
+            <a href="../../index.html">Home</a> /
+            <a href="index.html">Track Name</a> / Concept Title
+          </div>
+
+          <!-- 1. TITLE + status -->
+          <section class="page-header">
+            <div class="card__head" style="margin-bottom: var(--space-3)">
+              <h1 style="margin: 0">Concept Title</h1>
+              <span class="pill pill--draft">Draft</span>
+            </div>
+
+            <!-- 2. ONE-SENTENCE MEMORY ANCHOR -->
+            <p class="anchor">
+              Memory anchor — one sentence the reader should remember even after
+              forgetting everything else. <em>(placeholder)</em>
+            </p>
+          </section>
+
+          <!-- 3. CONCEPT STATUS METADATA -->
+          <dl class="meta">
+            <div><dt>Status</dt><dd>Draft</dd></div>
+            <div><dt>Track</dt><dd>—</dd></div>
+            <div><dt>Level</dt><dd>Intro / Core / Advanced</dd></div>
+            <div><dt>Last reviewed</dt><dd>YYYY-MM-DD</dd></div>
+            <div><dt>Confidence</dt><dd>Low / Medium / High</dd></div>
+          </dl>
+
+          <!-- 4. VISUAL MENTAL MODEL -->
+          <section class="section">
+            <div class="section__title"><h2>Visual mental model</h2></div>
+            <div class="viz" data-diagram>
+              <div data-stage>
+                <span class="viz__label">Diagram placeholder — stage 1</span>
+                <span class="viz__hint">Replace with SVG / canvas / DOM.</span>
+              </div>
+              <div data-stage hidden>
+                <span class="viz__label">Diagram placeholder — stage 2</span>
+              </div>
+              <!-- Optional stepper (wired by scripts/visual-components.js) -->
+              <div class="stepper">
+                <button type="button" data-step-prev>‹ Prev</button>
+                <span class="stepper__status" data-stage-status></span>
+                <button type="button" data-step-next>Next ›</button>
+              </div>
+            </div>
+          </section>
+
+          <!-- 5. STEP-BY-STEP MECHANISM -->
+          <section class="section">
+            <div class="section__title"><h2>Step-by-step mechanism</h2></div>
+            <ol>
+              <li>Step one. <em>(placeholder)</em></li>
+              <li>Step two. <em>(placeholder)</em></li>
+              <li>Step three. <em>(placeholder)</em></li>
+            </ol>
+          </section>
+
+          <!-- 6. FORMAL VIEW -->
+          <section class="section">
+            <div class="section__title"><h2>Formal view</h2></div>
+            <div class="code-trace">
+              <div class="code-trace__bar">formal notation</div>
+              <pre>placeholder for equations / formal definition</pre>
+            </div>
+          </section>
+
+          <!-- 7. TENSOR / DATA SHAPES -->
+          <section class="section">
+            <div class="section__title"><h2>Tensor / data shapes</h2></div>
+            <div class="table-wrap">
+              <table class="compare">
+                <thead>
+                  <tr><th>Symbol</th><th>Shape</th><th>Meaning</th></tr>
+                </thead>
+                <tbody>
+                  <tr><td><em>—</em></td><td><em>—</em></td><td><em>—</em></td></tr>
+                </tbody>
+              </table>
+            </div>
+          </section>
+
+          <!-- 8. CODE / API VIEW -->
+          <section class="section">
+            <div class="section__title"><h2>Code / API view</h2></div>
+            <div class="code-trace">
+              <div class="code-trace__bar">example.py</div>
+              <pre># placeholder — minimal, runnable-in-spirit snippet</pre>
+            </div>
+          </section>
+
+          <!-- 9. COMMON MISCONCEPTIONS -->
+          <section class="section">
+            <div class="section__title"><h2>Common misconceptions</h2></div>
+            <ul>
+              <li>Misconception → correction. <em>(placeholder)</em></li>
+            </ul>
+          </section>
+
+          <!-- 10. COMPARISON TABLE (if relevant) -->
+          <section class="section">
+            <div class="section__title"><h2>Comparison</h2></div>
+            <div class="table-wrap">
+              <table class="compare">
+                <thead>
+                  <tr><th>Option</th><th>Idea</th><th>Trade-off</th></tr>
+                </thead>
+                <tbody>
+                  <tr><td><em>—</em></td><td><em>—</em></td><td><em>—</em></td></tr>
+                </tbody>
+              </table>
+            </div>
+          </section>
+
+          <!-- 11. RECALL PANEL -->
+          <section class="section">
+            <div class="recall">
+              <div class="recall__title">Recall — test yourself</div>
+              <ul>
+                <li>Prompt 1? <em>(placeholder)</em></li>
+                <li>Prompt 2? <em>(placeholder)</em></li>
+              </ul>
+            </div>
+          </section>
+
+          <!-- 12. SOURCES / PROVENANCE -->
+          <section class="section">
+            <div class="provenance">
+              <div class="provenance__title">Sources / provenance</div>
+              <ul>
+                <li>
+                  <em>(placeholder)</em> — every factual claim above should map
+                  to a source here. See docs/PROVENANCE_STANDARDS.md.
+                </li>
+              </ul>
+            </div>
+          </section>
+
+          <!-- 13. OPEN QUESTIONS -->
+          <section class="section">
+            <div class="section__title"><h2>Open questions</h2></div>
+            <ul>
+              <li>Something still unclear. <em>(placeholder)</em></li>
+            </ul>
+          </section>
+
+          <!-- 14. LINKS TO RELATED PAGES -->
+          <section class="section">
+            <div class="section__title"><h2>Related pages</h2></div>
+            <ul>
+              <li><a href="#">Related concept</a> <em>(placeholder)</em></li>
+            </ul>
+          </section>
+
+          <p><a href="index.html">← Back to track</a></p>
+        </div>
+      </main>
+
+      <footer class="footer">
+        <div class="container footer__inner">
+          <span>Visual AI &amp; CS Atlas</span>
+          <span>&copy; <span data-current-year>2026</span></span>
+        </div>
+      </footer>
+    </div>
+
+    <script src="../../scripts/main.js"></script>
+    <script src="../../scripts/visual-components.js"></script>
+  </body>
+</html>
