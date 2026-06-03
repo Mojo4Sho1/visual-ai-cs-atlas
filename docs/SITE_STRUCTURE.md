@@ -46,12 +46,16 @@ visual-ai-cs-atlas/
   `visual-components.js`.
 - **`pages/<track>/`** — one folder per track. `index.html` is the track
   landing page; concept pages sit alongside it.
-- **`templates/`** — copy `concept-page-template.html` to start a new concept
-  page. Keep section order stable.
+- **`templates/`** — public, tracked templates: `concept-page-template.html` to
+  start a new page, `design-brief-template.md` (blank design brief), and
+  `page-build-checklist.md`. Keep section order stable; keep these blank.
 - **`assets/`** — static images/icons/diagrams.
-- **`docs/`** — public-facing standards and references.
-- **`internal/`** — private Claude guidance, design briefs, and planning. Git
-  ignores this directory; nothing here is published.
+- **`docs/`** — public-facing standards, references, and workflow docs
+  (`AGENT_WORKFLOW.md`, `BRIEF_TO_PAGE_WORKFLOW.md`).
+- **`internal/`** — private Claude guidance, **filled** design briefs
+  (`internal/briefs/`), and planning. Git ignores this directory; nothing here is
+  published. Public blank templates live in `templates/`; private filled briefs
+  live here.
 
 ## Relative path conventions
 

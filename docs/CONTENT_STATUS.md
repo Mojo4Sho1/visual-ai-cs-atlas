@@ -2,7 +2,9 @@
 
 Snapshot of what exists and what is planned. Status labels are defined in
 [PAGE_STANDARDS.md](PAGE_STANDARDS.md). Update this file whenever a page changes
-status.
+status — in particular, **update the relevant row after a concept page is created
+or revised** (it is the last stage of the
+[brief → page workflow](BRIEF_TO_PAGE_WORKFLOW.md)).
 
 > As of the initial scaffold, nearly everything is **Coming Soon**. The three
 > LLM placeholder pages are **Draft** only in the sense that the page shell

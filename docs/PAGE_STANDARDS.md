@@ -8,6 +8,11 @@ The canonical structure lives in
 [`templates/concept-page-template.html`](../templates/concept-page-template.html).
 Copy it; do not reinvent the layout.
 
+When possible, a real concept page should be created from a **design brief**
+rather than improvised — plan the page first, then build to it. See
+[`BRIEF_TO_PAGE_WORKFLOW.md`](BRIEF_TO_PAGE_WORKFLOW.md) and the blank
+[`templates/design-brief-template.md`](../templates/design-brief-template.md).
+
 ## Standard concept page structure
 
 In order:

@@ -56,13 +56,23 @@ Then visit <http://localhost:8000>. Stop the server with `Ctrl+C` when done.
 The relative paths in the template assume a page one level below `pages/`
 (it references `../../styles/…`). Adjust if you place a page elsewhere.
 
-## Using design briefs
+## Workflow for adding concept pages
 
-Before building a *real* concept page (not a placeholder), write a design brief
-so the page is planned before it is coded. Copy
-`internal/briefs/DESIGN_BRIEF_TEMPLATE.md`, fill it in (learning goals, required
-diagrams, key claims, sources to consult, acceptance criteria), then build to it.
-Briefs live under `internal/` and are **not** published.
+Real concept pages are planned with a **design brief**, then built to it. The
+process and the supporting files are public:
+
+- [`docs/AGENT_WORKFLOW.md`](docs/AGENT_WORKFLOW.md) — what any future assistant
+  should read and follow before modifying the repo.
+- [`docs/BRIEF_TO_PAGE_WORKFLOW.md`](docs/BRIEF_TO_PAGE_WORKFLOW.md) — the staged
+  brief → page process (discuss → brief → review → build → verify → status).
+- [`templates/design-brief-template.md`](templates/design-brief-template.md) —
+  blank design brief to copy.
+- [`templates/page-build-checklist.md`](templates/page-build-checklist.md) —
+  post-build verification checklist.
+
+Public **blank** templates are tracked here. **Filled** design briefs may be
+kept private and git-ignored (e.g. under `internal/briefs/`) — they are not
+published. As always, this repo **does not contain research notes**.
 
 ## Documentation
 
